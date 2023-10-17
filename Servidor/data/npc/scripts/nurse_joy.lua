@@ -169,10 +169,6 @@ local function tryHeal(cid)
 
     if (isPokemonOnline(cid) or getPlayerMounted(cid) or isEvolving(cid)) then
         selfSay("You can not do it while you have a Pokemon out of the ball.", cid)
-
-    elseif (not getTileInfo(getCreaturePosition(cid)).protection) then
-        selfSay("Please enter the Pokemon center to heal your Pokemon.", cid)
-
     else
         local pos = getNpcPos()
         for k, v in pairs(REQUIREMENTS) do
