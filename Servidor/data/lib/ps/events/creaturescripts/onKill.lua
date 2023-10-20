@@ -3,7 +3,7 @@ function onKill(cid, target, lastHit)
   if (not isSummon(target) and not getPokemonSummon(target)) then
     if isPlayer(cid) and (lastHit) then
       local value = Dz.getPlayerStorage(cid)
-	  print(value.state, value.diff, value.mapId, value.roomId)
+	  -- print(value.state, value.diff, value.mapId, value.roomId)
       if value.state == DzStateBattle then
         local Map = Dz.Diff[value.diff].Maps[value.mapId]
         local Room = Map.rooms[value.roomId]

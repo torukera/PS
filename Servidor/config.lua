@@ -335,7 +335,7 @@
 	deathProtection = 20 -- Death loss experience after this level
     updateHighscores = false
     rateCatch = 1.0
-	advancedSave = false
+	advancedSave = true
 	disconnectAtExit = true
 	defaultTownId = 32 -- Cerulean
 	logMapItems = false
